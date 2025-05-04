@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <!-- O'zgaruvchilarni e'lon qilish -->
+            <declare name="narx, kg, jami" type="Real" array="False" size=""/>
+
+            <output expression="&quot;1 kg konfet narxini kiriting:&quot;" newline="True"/>
+            <input variable="narx"/>
+
+            <!-- 1.2 dan 2.0 gacha 0.2 qadam bilan -->
+            <assign variable="kg" expression="1.2"/>
+            <while expression="kg &lt;= 2.0">
+                <assign variable="jami" expression="kg * narx"/>
+                <output expression="kg &amp; &quot; kg konfet narxi: &quot; &amp; jami" newline="True"/>
+                <assign variable="kg" expression="kg + 0.2"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

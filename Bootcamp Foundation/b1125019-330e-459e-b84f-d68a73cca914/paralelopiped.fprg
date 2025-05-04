@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, V, S" type="Real" array="False" size=""/>
+            <output expression="&quot;Paralelopipeddning tomonlarini kiriting (a, b, c): &quot;" newline="True"/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <assign variable="V" expression="a * b * c"/>
+            <assign variable="S" expression="2 * (a * b + b * c + a * c)"/>
+            <output expression="&quot;Paralelopipeddning hajmi: &quot; &amp; V" newline="True"/>
+            <output expression="&quot;Paralelopipeddning to&#39;la sirti: &quot; &amp; S" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

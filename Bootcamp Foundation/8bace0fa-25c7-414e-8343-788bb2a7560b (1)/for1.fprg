@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="for1"/>
+        <attribute name="authors" value=""/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-05-02 06:45:19 PM"/>
+        <attribute name="created" value="SWJyb3hpbWpvbjtERVNLVE9QLVA5NlU4R1A7MjAyNS0wNS0wMjswNjo0MTozMCBQTTszMzk3"/>
+        <attribute name="edited" value="SWJyb3hpbWpvbjtERVNLVE9QLVA5NlU4R1A7MjAyNS0wNS0wMjswNjo0NToxOSBQTTsxOzM1MTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="k, n, i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="1"/>
+            <output expression="&quot;K sonini kiriting:&quot;" newline="True"/>
+            <input variable="k"/>
+            <output expression="&quot;N sonini kiriting (n &gt; 0):&quot;" newline="True"/>
+            <input variable="n"/>
+            <if expression="n &gt; 0">
+                <then>
+                    <for variable="i" start="i" end="n" direction="inc" step="1">
+                        <output expression="k" newline="True"/>
+                    </for>
+                </then>
+                <else>
+                    <output expression="&quot;N soni musbat bo'lishi kerak!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

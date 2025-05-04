@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="for8"/>
+        <attribute name="authors" value=""/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-05-02 07:16:43 PM"/>
+        <attribute name="created" value="SWJyb3hpbWpvbjtERVNLVE9QLVA5NlU4R1A7MjAyNS0wNS0wMjswNzoxNjowOCBQTTszNDA1"/>
+        <attribute name="edited" value="SWJyb3hpbWpvbjtERVNLVE9QLVA5NlU4R1A7MjAyNS0wNS0wMjswNzoxNjo0MyBQTTsxOzM1MTI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, i, kopaytma" type="Integer" array="False" size=""/>
+            <output expression="&quot;a sonini kiriting:&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;b sonini kiriting (a &lt; b):&quot;" newline="True"/>
+            <input variable="b"/>
+            <if expression="a &lt; b">
+                <then>
+                    <assign variable="kopaytma" expression="1"/>
+                    <for variable="i" start="a" end="b" direction="inc" step="1">
+                        <assign variable="kopaytma" expression="kopaytma * i"/>
+                    </for>
+                    <output expression="&quot;Ko'paytma: &quot; &amp; kopaytma" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Xatolik: a soni b dan kichik bo'lishi kerak!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
